@@ -89,6 +89,9 @@ a.button:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .butonalan1, .butonalan2 {
+    padding: 0px;
+  }
   h1 {
     font-size: 30px;
   }
