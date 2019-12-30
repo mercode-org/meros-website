@@ -54,7 +54,7 @@
 .popup .content::-webkit-scrollbar-thumb {
   background: gray;
 }
-.svg {
+.svgdonation {
   max-width: 300px;
   height: auto;
 }
