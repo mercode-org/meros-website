@@ -1,2 +1,2 @@
-# meros.mercode.org
+# os.mercode.org
 Website of MerOS

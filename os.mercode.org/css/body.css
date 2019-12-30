@@ -1,0 +1,95 @@
+body
+{
+  margin-top: 100px;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #212121;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  padding-left: 10px;
+  color: white;
+}
+.paragraf1 {
+  float: left;
+  padding-left: 10px;
+  color: white;
+  width: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.paragraf2 {
+  float: right;
+  padding-right: 10px;
+  color: white;
+  width: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.alan {
+  padding-top: 300px;
+}
+.minialan1 {
+  float: right;
+}
+.minialan2 {
+  float: left;
+}
+.butonalan1 {
+  float: left;
+  padding-left: 10px;
+}
+.butonalan2 {
+  float: right;
+  padding-right: 20px;
+}
+.svg {
+  max-width: 500px;
+  height: auto;
+}
+a.button {
+    float: left;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 22px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+a.button:hover {
+  color: white;
+  background: #ff4d0d;
+  border-color: #ff4d0d;
+  transition: all 0.2s linear;
+}
+@media (max-width: 540px)
+{
+  .svg {
+    width: 100%;
+    height: auto;
+  }
+  .paragraf1, .paragraf2 {
+    width: 90%;
+  }
+  a.button {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
