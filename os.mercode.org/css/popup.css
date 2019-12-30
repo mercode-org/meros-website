@@ -58,14 +58,14 @@
   max-width: 300px;
   height: auto;
 }
-.minialan1 {
+.minikalan1 {
   float: right;
 }
-.butonalan {
+.butonalani {
   float: left;
   padding-left: 10px;
 }
-.paragraf1 {
+.paragiraf1 {
   text-align: left;
   float: left;
   padding-left: 10px;
@@ -121,10 +121,10 @@
   opacity: 1;
 }
 @media screen and (max-width: 1090px){
-  .paragraf1 {
+  .paragiraf1 {
     width: 40%;
   }
-  .minialan1 {
+  .minikalan1 {
     width: auto;
   }
 }
@@ -138,14 +138,14 @@
 }
 @media screen and (max-width: 910px)
 {
-  .minialan1 {
+  .minikalan1 {
     width: 90%;
   }
   .svgdonation {
     width: 100%;
     height: auto;
   }
-  .paragraf1, .paragraf2 {
+  .paragiraf1, .paragiraf2 {
     width: 90%;
   }
 }
