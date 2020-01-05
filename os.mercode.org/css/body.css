@@ -76,7 +76,7 @@ a.button:hover {
   transition: all 0.2s linear;
 }
 .ghost {
-  color: rgba(0, 0, 0, 0);
+  display: none;
   font-size: 5px;
 }
 @media (max-width: 540px)
