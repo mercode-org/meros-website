@@ -12,6 +12,9 @@ h1 {
   padding-left: 10px;
   color: white;
 }
+.alan {
+  margin: 20% 0;
+}
 .paragraf1 {
   float: left;
   padding-left: 10px;
@@ -27,9 +30,6 @@ h1 {
   width: 50%;
   margin-left: 5px;
   margin-right: 5px;
-}
-.alan {
-  padding-top: 300px;
 }
 .minialan1 {
   float: right;
@@ -75,22 +75,37 @@ a.button:hover {
   border-color: #ff4d0d;
   transition: all 0.2s linear;
 }
+.ghost {
+  color: rgba(0, 0, 0, 0);
+  font-size: 5px;
+}
 @media (max-width: 540px)
 {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px 0;
+  }
   .svg {
     width: 100%;
     height: auto;
+  }
+  .alan {
+    margin: 5% 0;
   }
   .paragraf1, .paragraf2 {
     width: 90%;
   }
   a.button {
+    width: 90%;
+    display: inline-block;
     float: none;
     margin-left: auto;
     margin-right: auto;
   }
   .butonalan1, .butonalan2 {
     padding: 0px;
+    width: 100%;
   }
   h1 {
     font-size: 30px;
