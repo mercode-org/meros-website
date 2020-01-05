@@ -76,8 +76,24 @@ a.button:hover {
   transition: all 0.2s linear;
 }
 .ghost {
-  display: none;
+  color: #212121
   font-size: 5px;
+}
+/*-------scrollbar-------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353535;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 162, 6, 0.9);
 }
 @media (max-width: 540px)
 {
