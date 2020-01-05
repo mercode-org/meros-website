@@ -58,7 +58,7 @@ header nav ul li a:hover {
   display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1075px) {
   header {
     padding: 0 20px;
     max-height: 65px;
