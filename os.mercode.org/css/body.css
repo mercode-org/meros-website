@@ -12,6 +12,11 @@ h1 {
   padding-left: 10px;
   color: white;
 }
+#speakers {
+	padding: 30px 0;
+
+	text-align: center;
+}
 .alan {
   margin: 15% 0;
 }
