@@ -1,4 +1,4 @@
-echo Copyleft 2019 Mercode - Protected by GPLv3 certificate.
+echo Copyleft 2019-2020 Mercode - Protected by GPLv3 certificate.
 echo Stashing local changes...
 git reset --hard origin/master
 git pull -f origin master
