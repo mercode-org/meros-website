@@ -33,9 +33,10 @@ $('nav').toggleClass('active')
 <div class="menu-toggle"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
 </header><section id="speakers">
 <h1><i class="fa fa-download" aria-hidden="true"></i>  Download</h1>
-<p> Install the Distro of The 21st Century by choosing your preferred architecture.</p>
+<section id="Page1" class="select-arch animated fadeIn">
+<p> Install the Distro of The 21st Century by choosing your preferred architecture. </br> Warning, the distro is currently in Alpha so don't except something like LCARS.</p>
 <div class="row1">
-<div class="card"><img src="assets/pc.png" alt="" />
+<div class="card" href="#" onclick="return show('Page2','Page1');"><img src="assets/pc.png" alt="" />
 <div class="card-info">
 <h2>64 Bit</h2>
 <p>Ideal for computers with:
@@ -46,7 +47,7 @@ $('nav').toggleClass('active')
 </p>
 </div>
 </div>
-<div class="card"><img src="assets/arm.png" alt="" />
+<div class="card" href="#" onclick="return showmenu('Page3','Page1');"><img src="assets/arm.png" alt="" />
 <div class="card-info">
 <h2>ARM</h2>
 <p>For ARMv8 computers, like:
@@ -57,4 +58,39 @@ $('nav').toggleClass('active')
 </div>
 </div>
 </div>
-</section>s<div id="donate" class="overlay"><div class="popup"><h2>Donate to Mercode</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).<br/></div><div class="butonalani"><a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a><br/><input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput"><br/><a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a></div></div></div></div></body>
+</section>
+<section id="Page2" class="select-de animated fadeIn">
+<p> Choose a Desktop Environment.</p>
+<div class="row1">
+<div class="card"><img src="assets/cinnamon.png" alt="" />
+<div class="card-info">
+<h2>Cinnamon</h2>
+<p> For people who look for a traditional desktop with modern technology and eyecandy desktop theme.</p>
+</div>
+</div>
+<div class="card"><img src="assets/mate.png" alt="" />
+<div class="card-info">
+<h2>Mate</h2>
+<p> For people who look for a traditional experience and eyecandy desktop theme.</p>
+</div>
+</div>
+<div class="card"><img src="assets/xfce.png" alt="" />
+<div class="card-info">
+<h2>XFCE</h2>
+<p> For people who want a reliable and fast desktop with an eyecandy desktop theme.</p>
+</div>
+</div>
+<div class="card"><img src="assets/lxde.png" alt="" />
+<div class="card-info">
+<h2>LXDE</h2>
+<p> For people who want a damn minimal desktop with an eyecandy desktop theme.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<div id="cinnamon" class="overlay"><div class="popup"><h2>MerOS Cinnamon</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">Download the Cinnamon edition of MerOS.<br/></div><div class="butonalani"><a href="" class="button"><i class="fa fa-download" aria-hidden="true"></i>  Direct</a>
+<a onclick="copyClipboard()" class="button"><i class="fa fa-download" aria-hidden="true"></i>  Ara</a></div></div></div></div>
+<div id="mate" class="overlay"><div class="popup"><h2>MerOS Mate</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).<br/></div><div class="butonalani"><a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a><br/><input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput"><br/><a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a></div></div></div></div>
+<div id="xfce" class="overlay"><div class="popup"><h2>MerOS XFCE</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).<br/></div><div class="butonalani"><a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a><br/><input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput"><br/><a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a></div></div></div></div>
+<div id="lxde" class="overlay"><div class="popup"><h2>MerOS LXDE</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).<br/></div><div class="butonalani"><a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a><br/><input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput"><br/><a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a></div></div></div></div><div id="donate" class="overlay"><div class="popup"><h2>Donate to Mercode</h2><a class="close" href="#">&times;</a><div class="content"><div class="minikalan1"><img class="svgdonation" src="assets/donation.svg" alt="Make Donations to Mercode!"/></div><div class="paragiraf1">If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).<br/></div><div class="butonalani"><a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a><br/><input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput"><br/><a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a></div></div></div></div></body>

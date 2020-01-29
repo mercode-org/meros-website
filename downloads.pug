@@ -6,29 +6,140 @@ block css
 block content
   <section id="speakers">
     <h1><i class="fa fa-download" aria-hidden="true"></i>  Download</h1>
-    <p> Install the Distro of The 21st Century by choosing your preferred architecture.</p>
-    <div class="row1">
-      <div class="card"><img src="assets/pc.png" alt="" />
-          <div class="card-info">
-              <h2>64 Bit</h2>
-              <p>Ideal for computers with:
-                  <li>2GB or more of RAM.</li>
-                  <li>64-bit capable Intel and AMD processors.</li>
-                  <li>UFEI and Legacy BIOS support.</li>
-                  <li>Intel-based Apple Macs.</li>
-              </p>
-          </div>
-      </div>
+    
+    <section id="Page1" class="select-arch animated fadeIn">
+      <p> Install the Distro of The 21st Century by choosing your preferred architecture. </br> Warning, the distro is currently in Alpha so don't except something like LCARS.</p>
+      <div class="row1">
+        <div class="card" href="#" onclick="return show('Page2','Page1');"><img src="assets/pc.png" alt="" />
+            <div class="card-info">
+                <h2>64 Bit</h2>
+                <p>Ideal for computers with:
+                    <li>2GB or more of RAM.</li>
+                    <li>64-bit capable Intel and AMD processors.</li>
+                    <li>UFEI and Legacy BIOS support.</li>
+                    <li>Intel-based Apple Macs.</li>
+                </p>
+            </div>
+        </div>
       
-      <div class="card"><img src="assets/arm.png" alt="" />
-          <div class="card-info">
-              <h2>ARM</h2>
-              <p>For ARMv8 computers, like:
-                  <li>Raspberry Pi 3B.</li>
-                  <li>Raspberry Pi 3B+.</li>
-                  <li>Raspberry Pi 4B</li>
-              </p>
-          </div>
+        <div class="card" href="#" onclick="return showmenu('Page3','Page1');"><img src="assets/arm.png" alt="" />
+            <div class="card-info">
+                <h2>ARM</h2>
+                <p>For ARMv8 computers, like:
+                    <li>Raspberry Pi 3B.</li>
+                    <li>Raspberry Pi 3B+.</li>
+                    <li>Raspberry Pi 4B</li>
+                </p>
+            </div>
+        </div>
       </div>
-    </div>
-  </section>s
+    </section>
+    
+    <section id="Page2" class="select-de animated fadeIn">
+      <p> Choose a Desktop Environment.</p>
+      <div class="row1">
+        <div class="card"><img src="assets/cinnamon.png" alt="" />
+            <div class="card-info">
+                <h2>Cinnamon</h2>
+                <p> For people who look for a traditional desktop with modern technology and eyecandy desktop theme.</p>
+            </div>
+        </div>
+        
+        <div class="card"><img src="assets/mate.png" alt="" />
+            <div class="card-info">
+                <h2>Mate</h2>
+                <p> For people who look for a traditional experience and eyecandy desktop theme.</p>
+            </div>
+        </div>
+          
+        <div class="card"><img src="assets/xfce.png" alt="" />
+            <div class="card-info">
+                <h2>XFCE</h2>
+                <p> For people who want a reliable and fast desktop with an eyecandy desktop theme.</p>
+            </div>
+        </div>
+        
+        <div class="card"><img src="assets/lxde.png" alt="" />
+            <div class="card-info">
+                <h2>LXDE</h2>
+                <p> For people who want a damn minimal desktop with an eyecandy desktop theme.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+  </section>
+  
+  <div id="cinnamon" class="overlay">
+    .popup
+      h2 MerOS Cinnamon
+      a.close(href='#') &times;
+      <div class="content">
+        .minikalan1
+          img.svgdonation(src='assets/donation.svg', alt='Make Donations to Mercode!')
+        .paragiraf1
+          | Download the Cinnamon edition of MerOS.
+          br
+        .butonalani
+          <a href="" class="button"><i class="fa fa-download" aria-hidden="true"></i>  Direct</a>
+          <a onclick="copyClipboard()" class="button"><i class="fa fa-download" aria-hidden="true"></i>  Ara</a>
+      </div>
+  </div>
+  
+  <div id="mate" class="overlay">
+    .popup
+      h2 MerOS Mate
+      a.close(href='#') &times;
+      <div class="content">
+        .minikalan1
+          img.svgdonation(src='assets/donation.svg', alt='Make Donations to Mercode!')
+        .paragiraf1
+          | If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).
+          br
+        .butonalani
+          <a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a>
+          br
+          <input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput">
+          br
+          <a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a>
+      </div>
+  </div>
+  
+  <div id="xfce" class="overlay">
+    .popup
+      h2 MerOS XFCE
+      a.close(href='#') &times;
+      <div class="content">
+        .minikalan1
+          img.svgdonation(src='assets/donation.svg', alt='Make Donations to Mercode!')
+        .paragiraf1
+          | If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).
+          br
+        .butonalani
+          <a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a>
+          br
+          <input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput">
+          br
+          <a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a>
+      </div>
+  </div>
+  
+  <div id="lxde" class="overlay">
+    .popup
+      h2 MerOS LXDE
+      a.close(href='#') &times;
+      <div class="content">
+        .minikalan1
+          img.svgdonation(src='assets/donation.svg', alt='Make Donations to Mercode!')
+        .paragiraf1
+          | If you would like to see this team contributing more to the community, you can donate us on Patreon or send Etherium to our wallet to help us paying our server bills or to order us a coffee (because we really need it after long hours of coding).
+          br
+        .butonalani
+          <a href="https://www.patreon.com/mercode" class="button"><i class="fa fa-money" aria-hidden="true"></i>  Patreon</a>
+          br
+          <input class="kripto" type="text" value="0xf65C6EE66b6f831Ac212A86C2c3502FC285C978E" id="myInput">
+          br
+          <a onclick="copyClipboard()" class="button"><i class="fa fa-files-o" aria-hidden="true"></i>  ETH</a>
+      </div>
+  </div>
+  

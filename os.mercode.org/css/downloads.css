@@ -10,6 +10,14 @@
   margin-top: 0;
 }
 
+.select-arch {
+	display: block;
+}
+
+.select-de {
+	display: none;
+}
+
 .row1 {
   display: grid;
   grid-template-columns: auto auto;
@@ -27,23 +35,35 @@ img {
   width: 100%;
 }
 .card {
-  width: 90%;
+  width: 87%;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   padding: 10px;
   margin: 10px;
   background: #353535;
   border-radius: 8px;
   transition: all 0.2s linear;
+	cursor: pointer;
 }
 .card:hover {
+	width: 92%;
   box-shadow: 4px 4px 6px 0px  rgba(0,0,0,0.5);
   transition: all 0.2s linear;
+	background: #ff4d0d;
 }
+
+.card:focus {
+	linear-gradient(45deg, rgba(255, 29, 17, 0.9), rgba(255, 162, 6, 0.9));
+}
+
 .card img {
   max-width: 150px;
   float: right;
   padding: 10px;
  }
+
+.card:hover img{
+	filter: grayscale(100%);
+}
 
 .card-info {
   font-size: 12px;
