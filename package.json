@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "electron": "^2.0.4",
-    "pug": "^2.0.4"
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "start": "pug -w ./ -o ./os.mercode.org & pug -w ./tr -o ./os.mercode.org/tr & http-server -p 3333 os.mercode.org",
+    "build": "pug ./ -o ./os.mercode.org && pug ./tr -o ./os.mercode.org/tr"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
   }
 }
