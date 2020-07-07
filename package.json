@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "electron": "^2.0.4",
+    "electron": "^9.1.0",
     "pug": "^2.0.4"
   }
 }
